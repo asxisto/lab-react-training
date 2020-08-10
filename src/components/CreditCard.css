@@ -1,0 +1,49 @@
+.creditCards {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.creditCard {
+  display: flex;
+  flex-direction: column;
+  height: 170px;
+  width: 300px;
+  border-radius: 10px;
+  background-color: gold;
+  margin-right: 2rem;
+}
+
+.creditCardTypeRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.creditCardType {
+  display: flex;
+  justify-content: flex-end;
+  height: 30px;
+  padding: 10px 10px;
+}
+
+.creditCardNumber {
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+  padding-top: 1.5rem;
+}
+
+.creditCardExpires {
+  padding-left: 20px;
+  padding-top: 10px;
+  font-size: 0.8em;
+}
+
+.creditCardExpires span {
+  padding-left: 20px;
+}
+
+.creditCardName {
+  padding-left: 20px;
+  font-size: 0.8em;
+}
