@@ -46,3 +46,7 @@
 .ratingStars {
   font-size: 2rem;
 }
+
+.diceGame img {
+  width: 150px;
+}
