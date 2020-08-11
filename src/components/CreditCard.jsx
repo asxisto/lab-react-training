@@ -1,21 +1,16 @@
 import React from 'react';
 import './CreditCard.css';
 
-let visa = './../../public/img/visa.png';
-let masterCard = './../../public/img/master-card.svg';
-
-const CreditCard = (props) => {
-  const {
-    type,
-    number,
-    expirationMonth,
-    expirationYear,
-    bank,
-    owner,
-    bgColor,
-    color,
-  } = props;
-
+const CreditCard = ({
+  type,
+  number,
+  expirationMonth,
+  expirationYear,
+  bank,
+  owner,
+  bgColor,
+  color,
+}) => {
   const zeroPad = (num, places) => String(num).padStart(places, '0');
 
   let cardLastNumbers = number.substr(-4);
@@ -30,9 +25,9 @@ const CreditCard = (props) => {
     >
       <div className="creditCardTypeRow">
         {type === 'Visa' ? (
-          <img className="creditCardType" src="./img/visa.png" />
+          <img className="creditCardType" src="./img/visa.png" alt="" />
         ) : (
-          <img className="creditCardType" src="./img/master-card.svg" />
+          <img className="creditCardType" src="./img/master-card.svg" alt="" />
         )}
       </div>
       <div className="creditCardNumber">•••• •••• •••• {cardLastNumbers}</div>
